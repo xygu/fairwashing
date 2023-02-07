@@ -3,7 +3,7 @@ MODELS="cifar_acc.pth mnist_intgrad.pth fmnist_acc.pth mnist_lrp.pth fmnist_lrp.
 
 mkdir -p share/models
 cd share/models
-curl "http://doc.ml.tu-berlin.de/fairwashing/models.zip" -Lo models.zip
+curl "http://doc.ml.tu-berlin.de/fairwashing/models.zip" -Lo -k models.zip
 rm -f $MODELS
 unzip models.zip $MODELS
 rm models.zip
