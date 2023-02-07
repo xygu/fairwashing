@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name="fairwasher",
     use_scm_version=True,
-    packages=find_packages(),
+    packages=find_packages() + find_packages(where = '.\fairwasher'),
     install_requires=[
         'torch',
         'torchvision',
